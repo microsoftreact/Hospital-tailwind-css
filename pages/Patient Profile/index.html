@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <title>Patient Profile</title>
+  </head>
+  <body>
+    <div class="w-full min-h-screen relative">
+      <div
+        class="menu w-[25%] duration-500 fixed h-screen bg-[#898A8B] pl-2 pt-10 text-2xl text-white flex flex-col gap-5 z-10"
+        id="menu"
+      >
+        <div
+          class="times hover:bg-gray-400 duration-300 w-[40px] h-[40px] flex justify-center items-center cursor-pointer right-3 top-3 absolute"
+          id="btn"
+          data-btn="1"
+        >
+          <i class="fas fa-times"></i>
+        </div>
+        <a href="#" class="duration-300 hover:bg-gray-600 py-2"
+          >Mening profilim</a
+        >
+        <details class="pr-2">
+          <summary class="cursor-pointer">Tibbiy ma'lumotlar</summary>
+          <div class="flex flex-col gap-1 pl-7 mt-5">
+            <a class="duration-300 hover:bg-gray-600 py-2" href="#"
+              >Kassalik tarixlari</a
+            >
+            <a class="duration-300 hover:bg-gray-600 py-2" href="#"
+              >Ruhiy kasalliklar dispansiyasi</a
+            >
+            <a class="duration-300 hover:bg-gray-600 py-2" href="#"
+              >Narkalogik dispanser</a
+            >
+            <a class="duration-300 hover:bg-gray-600 py-2" href="#"
+              >Davolanganligi haqidagi ma'lumotnoma</a
+            >
+            <a class="duration-300 hover:bg-gray-600 py-2" href="#"
+              >Vaksinatsiya</a
+            >
+          </div>
+        </details>
+      </div>
+      <div
+        class="patient relative w-[75%] min-h-screen bg-[#E4E9EB] left-[25%] pt-14"
+      >
+        <div
+          class="bars duration-300 absolute left-5 top-[55px] cursor-pointer hover:bg-gray-400 w-[40px] h-[40px] flex justify-center items-center"
+          id="btn"
+          data-btn="2"
+        >
+          <i class="fas fa-bars"></i>
+        </div>
+        <h2 class="text-center text-2xl text-black font-semibold">
+          Kasalik tarixlari
+        </h2>
+        <div
+          class="ill-historys flex flex-wrap justify-evenly gap-y-7 w-full min-h-[400px] mt-10"
+        >
+          <div
+            class="w-[300px] h-[200px] border-[3px] border-orange-500 bg-[#faffa1]"
+          ></div>
+          <div
+            class="w-[300px] h-[200px] border-[3px] border-orange-500 bg-[#faffa1]"
+          ></div>
+          <div
+            class="w-[300px] h-[200px] border-[3px] border-orange-500 bg-[#faffa1]"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

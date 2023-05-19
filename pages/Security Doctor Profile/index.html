@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <title>Patient Profile</title>
+  </head>
+  <body>
+    <div
+      class="new-list fixed w-full h-screen bg-black/90 top-0 left-0 z-20 justify-center items-center"
+    >
+      <div
+        class="absolute top-5 right-5 text-3xl z-50 text-white cursor-pointer"
+        id="new-list-item-remove"
+      >
+        <i class="fas fa-times"></i>
+      </div>
+      <div
+        class="list w-[500px] max-w-[90%] min-h-[500px] bg-white flex justify-center items-center flex-col gap-3 py-2"
+      >
+        <table class="w-full border border-red-600">
+          <tr>
+            <td>Shikoyati</td>
+            <td>
+              <input type="text" id="shikoyati" />
+            </td>
+          </tr>
+          <tr>
+            <td>Arterial bosimi</td>
+            <td>
+              <input type="text" id="bosimi" />
+            </td>
+          </tr>
+          <tr>
+            <td>Puls</td>
+            <td>
+              <input type="text" id="puls" />
+            </td>
+          </tr>
+          <tr>
+            <td>Analizlar</td>
+            <td>
+              <input type="text" id="analizlar" />
+            </td>
+          </tr>
+          <tr>
+            <td>Diagnos</td>
+            <td>
+              <input type="text" id="diagnos" />
+            </td>
+          </tr>
+          <tr>
+            <td>Retsept</td>
+            <td>
+              <input type="text" id="retsept" />
+            </td>
+          </tr>
+          <tr>
+            <td>Vrach F.I.O.</td>
+            <td>
+              <input type="text" id="vrach" />
+            </td>
+          </tr>
+        </table>
+        <button
+          class="p-2 px-4 duration-300 bg-blue-500 text-white hover:bg-blue-600"
+          id="add-btn"
+        >
+          Qo'shish
+        </button>
+      </div>
+    </div>
+    <div class="w-full min-h-screen relative">
+      <div
+        class="menu w-[25%] duration-500 fixed h-screen bg-[#898A8B] pl-2 pt-10 text-2xl text-white flex flex-col gap-5 z-10"
+        id="menu"
+      >
+        <div
+          class="times hover:bg-gray-400 duration-300 w-[40px] h-[40px] flex justify-center items-center cursor-pointer right-3 top-3 absolute"
+          id="btn"
+          data-btn="1"
+        >
+          <i class="fas fa-times"></i>
+        </div>
+        <a href="#" class="duration-300 hover:bg-gray-600 py-2">Komilov Ali</a>
+        <details class="pr-2">
+          <summary class="cursor-pointer">Tibbiy ma'lumotlar</summary>
+          <div class="flex flex-col gap-1 pl-7 mt-5">
+            <a class="duration-300 hover:bg-gray-600 py-2" href="#"
+              >Kassalik tarixlari</a
+            >
+            <a class="duration-300 hover:bg-gray-600 py-2" href="#"
+              >Ruhiy kasalliklar dispansiyasi</a
+            >
+            <a class="duration-300 hover:bg-gray-600 py-2" href="#"
+              >Narkalogik dispanser</a
+            >
+            <a class="duration-300 hover:bg-gray-600 py-2" href="#"
+              >Davolanganligi haqidagi ma'lumotnoma</a
+            >
+            <a class="duration-300 hover:bg-gray-600 py-2" href="#"
+              >Vaksinatsiya</a
+            >
+          </div>
+        </details>
+      </div>
+      <div
+        class="patient relative w-[75%] min-h-screen bg-[#E4E9EB] left-[25%] py-2 px-5"
+      >
+        <div
+          class="bars duration-300 absolute left-5 top-[10px] cursor-pointer hover:bg-gray-400 w-[40px] h-[40px] flex justify-center items-center"
+          id="btn"
+          data-btn="2"
+        >
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="patient">
+          <div class="user px-3 flex gap-3 items-center text-2xl">
+            <div
+              class="left border-[4px] border-white bg-[#d0d0d0] w-[165px] h-auto flex justify-center items-center px-2 py-4"
+            >
+              <img src="../../images/bemor.png" class="w-[160px]" alt="user" />
+            </div>
+            <div class="right flex flex-col gap-1">
+              <h2 class="font-bold">Umumiy ma'lumotlar</h2>
+              <h2><b>FIO:</b> Komilov Ali</h2>
+              <h2><b>Tug'ilgan sanasi:</b> 21.09.1999</h2>
+              <h2><b>Jinsi:</b> Erkak</h2>
+            </div>
+          </div>
+          <div class="about flex rounded-2xl bg-white w-[90%] m-4 py-1">
+            <div
+              class="left w-1/2 min-h-[140px] border-r border-red-300 flex justify-center items-center text-2xl"
+            >
+              <h2><b>Surunkali kasaligi:</b> Diabet 1-tur</h2>
+            </div>
+            <div
+              class="right w-1/2 min-h-[140px] flex justify-center items-start pl-5 flex-col text-2xl"
+            >
+              <h2><b>Qon guruhi:</b> IV</h2>
+              <h2><b>Resus factor:</b> (-)</h2>
+              <h2>
+                <b>Allergik reaksiya</b> temir saqlovchi dorilarga, changa
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center w-full pl-3">
+          <h2 class="text-center pt-5 text-2xl text-black font-semibold">
+            Kasalik tarixlari
+          </h2>
+          <div
+            class="ill-historys flex flex-wrap justify-start gap-10 min-h-[180px] mt-10"
+            id="new-list-item"
+          >
+            <div
+              class="w-[280px] h-[200px] border-[3px] border-orange-500 bg-[#3e3e3e] text-7xl flex justify-center items-center text-[#b9d7d5] cursor-pointer"
+            >
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <div
+              class="w-[280px] h-[200px] border-[3px] border-orange-500 bg-[#b9d7d5]"
+            ></div>
+            <div
+              class="w-[280px] h-[200px] border-[3px] border-orange-500 bg-[#b9d7d5]"
+            ></div>
+            <div
+              class="w-[280px] h-[200px] border-[3px] border-orange-500 bg-[#b9d7d5]"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
